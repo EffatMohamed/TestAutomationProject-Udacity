@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="12" time="410.603">
+<testcase classname="user should be able to sign up with new account successfully" name="user should be able to sign up with valid credentials successfully" time="20.73">
+<system-out><![CDATA[Given user click on register link...........................................passed
+When user fills your personal details with valid data.......................passed
+And user fills your password field with valid data..........................passed
+And user clicks on register button..........................................passed
+Then user could sign up to his home page successfully and success message is displayed.passed
+]]></system-out>
+</testcase>
+<testcase classname="users could use login functionality to open their accounts" name="user could login with valid email and password" time="29.531">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user login with valid username and password............................passed
+And user press on login button..............................................passed
+Then user login to the system successfully..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User could reset his/her password successfully" name="user is able to reset his password" time="22.516">
+<system-out><![CDATA[Given user click on login button............................................passed
+And user clicks on ForgotPassword button....................................passed
+When user enters his valid email............................................passed
+And user clicks on Recover button...........................................passed
+Then success message appears to notify the user that all details are sent to his email address.passed
+]]></system-out>
+</testcase>
+<testcase classname="user could search for any product on the website" name="user could search for product using product name" time="26.463">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user login with valid username and password............................passed
+And user press on login button..............................................passed
+Then user login to the system successfully..................................passed
+Given user click on search field............................................passed
+When user search with name of product.......................................passed
+Then user could find relative results.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Logged User could switch between currencies US-Euro" name="user could change the currency to be Euro" time="31.732">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user login with valid username and password............................passed
+And user press on login button..............................................passed
+Then user login to the system successfully..................................passed
+Given user click on currencies button.......................................passed
+When user select Euro.......................................................passed
+Then user can see all prices in Euro........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Logged user could select different Categories" name="user could select different categories" time="36.279">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user login with valid username and password............................passed
+And user press on login button..............................................passed
+Then user login to the system successfully..................................passed
+Given user click on the main category: Electronics..........................passed
+When user select sub-category:Camera & Photo................................passed
+Then user navigate to the subcategories page................................passed
+And user select Jewelry section.............................................passed
+And user is able add Jewerly items ti his cart..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Logged user could filter with color" name="user is able to filter with color" time="33.116">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user login with valid username and password............................passed
+And user press on login button..............................................passed
+Then user login to the system successfully..................................passed
+Given user clicks on Apparel category.......................................passed
+When user clicks on subcategory shoes.......................................passed
+And user filter with red....................................................passed
+And user click on the first item............................................passed
+Then user could view the full picture of the red shoes......................passed
+And user could able to add the red shoes to the cart........................passed
+And success operation by checking the color element.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Logged user could select different tags" name="user is able to select different tags when searching for a certain item" time="26.966">
+<system-out><![CDATA[Given user click on search field............................................passed
+When user search with name of product.......................................passed
+Then user could find relative results.......................................passed
+Given use select advanced search............................................passed
+And user select Apparel Category List.......................................passed
+And user click on search in description.....................................passed
+When user clicks on submit"search" button...................................passed
+Then user is able to click on shoes tag.....................................passed
+And user clicks on awesome tag..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Logged user could add different products to Shopping cart" name="user is able to add different products to his cart" time="47.203">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user login with valid username and password............................passed
+And user press on login button..............................................passed
+Then user login to the system successfully..................................passed
+Given user clicks on The Apparel category...................................passed
+When user clicks on subcategory clothes.....................................passed
+And user adds products from clothes category................................passed
+And User ENter Req. text....................................................passed
+And user add the Tshirt to his cart.........................................passed
+And user click on Digital downloads.........................................passed
+And user click ON DD Photo..................................................passed
+And user Add DD photo TO The cart...........................................passed
+And user click ON Shopping CArt.............................................passed
+Then user is able to update the quantity....................................passed
+And user is able to remove items from cart..................................passed
+And user could confirm update cart..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Logged user could add different products to compare list" name="user is able to add different products to compare list then compare between them" time="42.579">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user login with valid username and password............................passed
+And user press on login button..............................................passed
+Then user login to the system successfully..................................passed
+Given user click on search field............................................passed
+When user search with name of product.......................................passed
+When user add the first product to compare list.............................passed
+Then success message appears that the product is already added to the compare list.passed
+And user add the second product to compare list.............................passed
+And success message appears that the second product is already added to the compare list.passed
+And user could see the items in the compare list............................passed
+]]></system-out>
+</testcase>
+<testcase classname="user could be able to add products to the wishlist" name="user add products to wishlist successfully" time="35.416">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user login with valid username and password............................passed
+And user press on login button..............................................passed
+Then user login to the system successfully..................................passed
+Given user click on wishlist for a specific product.........................passed
+And user add another element to wishlist....................................passed
+When user goes to Wishlist..................................................passed
+And count number of quantity................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Create successful Order" name="user is able to complete his order successfully" time="57.469">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user login with valid username and password............................passed
+And user press on login button..............................................passed
+Then user login to the system successfully..................................passed
+Given user clicks on The Apparel category...................................passed
+When user clicks on subcategory clothes.....................................passed
+And user adds products from clothes category................................passed
+And User ENter Req. text....................................................passed
+And user add the Tshirt to his cart.........................................passed
+And user click on Digital downloads.........................................passed
+And user click ON DD Photo..................................................passed
+And user Add DD photo TO The cart...........................................passed
+And user click ON Shopping CArt.............................................passed
+Then user is able to update the quantity....................................passed
+And user is able to remove items from cart..................................passed
+And user could confirm update cart..........................................passed
+When user is able to accept terms and conditions............................passed
+And user is able to click on Checkout.......................................passed
+And user is able to select country..........................................passed
+And user is able to enter the city successfully.............................passed
+And user is able to enter the address successfully..........................passed
+And user isa able tp Enter His ZIP code successfully........................passed
+And user is able to Enter the phone number successfully and continue the process.passed
+And user is able to fill address............................................passed
+And user able to select paymentMethods......................................passed
+Then user can confirm the order.............................................passed
+And success Message Appears that the order is already completed successfully.passed
+]]></system-out>
+</testcase>
+</testsuite>
